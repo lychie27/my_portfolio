@@ -3,10 +3,6 @@ html {
     font-size: 16px;
 }
 
-header {
-    display: none;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: "Unica One", "Helvetica", sans-serif;
     letter-spacing: 1%;
@@ -18,7 +14,85 @@ p {
     font-size: 1rem;
 }
 
-/* landing page */
+/* navigation styles */
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav */
+.nav-icon {
+    font-size: 3rem;
+    position: fixed;
+    color: rgb(96, 178, 201);
+    cursor: pointer;
+    margin: 1.2rem 2rem;
+}
+
+.nav {
+    height: 100vh;
+    /* width: 16rem; */
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(96, 178, 201);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.nav .closebtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    /* margin-left: 3.125rem; */
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-list-item {
+    font-family: "Unica One", "Helvetica", sans-serif;
+}
+
+.nav-list-item-link {
+    margin: 2rem 2.5rem;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    display: inline-block;
+    position: relative;
+    min-width: 12.5rem;
+}
+
+/* https://www.30secondsofcode.org/css/s/hover-underline-animation */
+.nav-list-item-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-list-item-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.colophon {
+    font-size: 0.8rem;
+    color: #fff;
+    text-align: center;
+    bottom: 1rem;
+    min-width: 12.5rem;
+}
+
+/* landing page styles */
 .landing {
     text-align: center;
     display: flex;
@@ -46,5 +120,5 @@ p {
     font-size: 2rem;
     right: 0;
     bottom: 0;
-    padding: 1.2rem 2rem;
+    margin: 1.2rem 2rem;
 }
