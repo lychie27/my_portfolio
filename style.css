@@ -1,0 +1,50 @@
+/* universal styles */
+html {
+    font-size: 16px;
+}
+
+header {
+    display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Unica One", "Helvetica", sans-serif;
+    letter-spacing: 1%;
+    color: rgb(96, 178, 201);
+}
+
+p {
+    font-family: "Karla", "Helvetica", sans-serif;
+    font-size: 1rem;
+}
+
+/* landing page */
+.landing {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.greeting {
+    width: 31.25rem;
+    height: 22rem;
+}
+
+.greeting h1 {
+    font-size: 12.5rem;
+}
+
+.greeting h2 {
+    font-size: 6rem;
+}
+
+.landing h3 {
+    position: fixed;
+    font-size: 2rem;
+    right: 0;
+    bottom: 0;
+    padding: 1.2rem 2rem;
+}
